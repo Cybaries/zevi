@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@mixin focus{
+    background-color: #fff;
+    :focus{
+        outline: none;
+        border-color: #fff;
+    }
+}
+
+$size: 16px;
+
+body{
+    background: url(../images/bg.jpg);
+    background-attachment: fixed;
+}
+
+.form{
+    padding: 25% 25%;
+    width: 50%;
+    height: 5vh;
+    input{
+        height: 100%;
+        width: 74%;
+        border-radius: 10px 0 0 10px;
+        padding-left: 15px;
+        font-size: $size;
+        @include focus;
+    }
+    button{
+        height: 110%;
+        width: 10%;
+        border-radius: 0 10px 10px 0;
+        font-size: $size;
+        @include focus;
+    }
+}
