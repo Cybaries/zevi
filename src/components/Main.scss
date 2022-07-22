@@ -18,13 +18,13 @@ body{
 }
 
 .form{
-    padding: 25% 25%;
+    padding: 5% 25%;
     width: 50%;
     height: 5vh;
     input{
         height: 100%;
         width: 74%;
-        border-radius: 10px 0 0 10px;
+        border-radius: 20px 0 0 20px;
         padding-left: 15px;
         font-size: $size;
         @include focus;
@@ -32,8 +32,43 @@ body{
     button{
         height: 110%;
         width: 10%;
-        border-radius: 0 10px 10px 0;
+        border-radius: 0 20px 20px 0;
         font-size: $size;
         @include focus;
+    }
+}
+
+.logo{
+    margin-left: 85%;
+    img{
+        height: 50%;
+        width: 50%;
+    }
+}
+
+.trend{
+    display: block;
+    width: 65vw;
+    height: 80vh;
+    background-color: #fff;
+    margin:5% 0 0 15%;
+    .title{
+        font-family:'Courier New', Courier, monospace;
+        font-weight:bolder;
+        font-size: 25px;
+        padding: 2% 0 0 5%;
+    }
+    .suggestions{
+        width: 90%;
+        height: 30%;
+        padding: 3rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        .display{
+            width: 20%;
+            height: 100%;
+        }
     }
 }
