@@ -7,7 +7,7 @@ function Main() {
   const [ isShown, setIsShown ] = useState(false);
   // const [ isDisplay, setDisplay ] = useState(false);
   const [ message, setMessage ] = useState('');
-  const update = event => { 
+  const update = event => {
     setMessage(event.target.value);
   }
   const handleClick = event => {
@@ -17,7 +17,7 @@ function Main() {
   const invisible = () => {
     setIsShown(false);
   }
-  const search = event => { 
+  const search = event => {
     event.preventDefault();
     window.open(`https://www.google.com/search?q=${message}`, '_self', 'noopener, noreferrer');
     // setDisplay(!isDisplay);
@@ -33,7 +33,6 @@ function Main() {
         <button className="fa fa-search" onClick={search}></button>
       </div>
       {isShown && <Trend />}
-      {/* {isDisplay && <P2 />} */}
     </div>
   );
 }
