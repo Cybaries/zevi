@@ -45,30 +45,3 @@ body{
         width: 50%;
     }
 }
-
-.trend{
-    display: block;
-    width: 65vw;
-    height: 80vh;
-    background-color: #fff;
-    margin:5% 0 0 15%;
-    .title{
-        font-family:'Courier New', Courier, monospace;
-        font-weight:bolder;
-        font-size: 25px;
-        padding: 2% 0 0 5%;
-    }
-    .suggestions{
-        width: 90%;
-        height: 30%;
-        padding: 3rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        .display{
-            width: 20%;
-            height: 100%;
-        }
-    }
-}
