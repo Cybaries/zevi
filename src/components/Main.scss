@@ -8,7 +8,7 @@ $size: 16px;
 @mixin focus{
     background-color: #fff;
     :focus{
-        outline: none;
+        // outline: none;
         border-color: transparent;
     }
 }
