@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
 }
+
+$size: 16px;
+
 @mixin focus{
     background-color: #fff;
     :focus{
         outline: none;
-        border-color: #fff;
+        border-color: transparent;
     }
 }
-
-$size: 16px;
 
 body{
     background: url(../images/bg.jpg);
